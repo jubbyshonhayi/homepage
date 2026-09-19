@@ -49,7 +49,7 @@ def contact():
                 (name, email, message)
             )
 
-        flash("Thanks! Your message has bezf sen submitted.", "success")
+        flash("Thanks! Your message has been submitted.", "success")
         return redirect(url_for("contact"))
 
     return render_template("contact.html")
