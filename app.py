@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os
 from psycopg_pool import ConnectionPool
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="public", static_url_path="")
 load_dotenv()
 
 app.secret_key = os.getenv("SECRET_KEY")
