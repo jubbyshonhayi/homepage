@@ -1,0 +1,670 @@
+/* =========================================================
+   General Page Styling
+   ========================================================= */
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+/* =========================================================
+   Navigation
+   ========================================================= */
+
+.navbar {
+    padding: 14px 0;
+    background-color: #212529 !important;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: 0.2s ease;
+}
+
+.navbar-brand:hover {
+    color: #8bb9fe;
+}
+
+.navbar-nav {
+    gap: 6px;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.navbar .nav-link.active {
+    color: #ffffff;
+    background-color: rgba(13, 110, 253, 0.25);
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 6px 9px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.3);
+}
+
+
+/* =========================================================
+   Hero Section
+   ========================================================= */
+
+.hero {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: white;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.hero-label {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.hero h1 {
+    max-width: 750px;
+    line-height: 1.15;
+}
+
+.hero h1 span {
+    display: block;
+    color: #ffe69c;
+}
+
+.hero p {
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.hero-buttons .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.hero-photo-wrapper {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.hero-photo {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+    border-radius: 18px;
+}
+
+
+/* =========================================================
+   General Sections
+   ========================================================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.section h2 {
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   General Cards
+   ========================================================= */
+
+.card {
+    border: 2px solid #e1e7f0;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   What I Do
+   ========================================================= */
+
+.what-i-do-card {
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #e1e7f0;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #ffffff, #f5f7ff);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.what-i-do-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(13, 110, 253, 0.12);
+}
+
+.what-i-do-card h5 {
+    margin-bottom: 14px;
+    font-weight: 650;
+}
+
+.what-i-do-card p {
+    margin-bottom: 0;
+    color: #495057;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   Inspiration Quote
+   ========================================================= */
+
+#quote {
+    color: #198754;
+}
+
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   Technology Badges
+   ========================================================= */
+
+.badge {
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   Project Cards
+   ========================================================= */
+
+.project-card {
+    min-height: 220px;
+    border: 1px solid #e1e7f0;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #ffffff, #f1f5ff);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.project-card::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.15);
+}
+
+.project-card .card-body {
+    padding: 28px;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    font-weight: 650;
+    color: #212529;
+}
+
+.project-card p {
+    line-height: 1.7;
+    color: #495057;
+}
+
+.project-card strong {
+    color: #343a40;
+}
+
+.project-card .badge {
+    margin-right: 4px;
+}
+
+
+/* =========================================================
+   Project Links
+   ========================================================= */
+
+.project-links {
+    margin-top: 15px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   Projects Header
+   ========================================================= */
+
+.projects-header {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.projects-header h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.projects-header p {
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   About Page
+   ========================================================= */
+
+.about-header {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.about-header span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #0d6efd;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.about-header h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-header p {
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.about-intro {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #e1e7f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.about-intro p {
+    line-height: 1.7;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.interest-card {
+    height: 100%;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #e1e7f0;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.interest-card h5 {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.interest-card p {
+    margin-bottom: 0;
+    line-height: 1.6;
+    color: #495057;
+}
+
+
+/* =========================================================
+   Skills
+   ========================================================= */
+
+.skills-list {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-list .badge {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+    transition: 0.2s;
+}
+
+.skills-list .badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   Hobbies
+   ========================================================= */
+
+.hobbies-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    background-color: white;
+    border: 1px solid #e1e7f0;
+    border-radius: 12px;
+}
+
+.hobbies-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.hobbies-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   Goal Section
+   ========================================================= */
+
+.goal-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #f1f5ff);
+    border: 1px solid #e1e7f0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.goal-section p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   Homepage About Section
+   ========================================================= */
+
+.home-about {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #f5f7ff);
+    border: 1px solid #e1e7f0;
+    border-radius: 18px;
+}
+
+.home-about h2 {
+    margin-bottom: 20px;
+    font-weight: 650;
+}
+
+.home-about p {
+    max-width: 750px;
+    margin: 0 auto 12px;
+    color: #495057;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   Contact Page
+   ========================================================= */
+
+.contact-header {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.contact-header span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #0d6efd;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.contact-header h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-header p {
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.contact-form-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px;
+    background: linear-gradient(145deg, #ffffff, #f5f7ff);
+    border: 1px solid #e1e7f0;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-card .form-control {
+    border-radius: 10px;
+    padding: 11px 14px;
+}
+
+.contact-form-card .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+}
+
+.contact-form-card .btn {
+    padding: 10px 22px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   Other Contact Methods
+   ========================================================= */
+
+.other-contact {
+    max-width: 800px;
+    margin: 45px auto 0;
+    padding-top: 35px;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.other-contact h3 {
+    margin-bottom: 20px;
+    font-weight: 650;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact-links a {
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    color: #212529;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.contact-links a:hover {
+    color: #0d6efd;
+    border-color: #0d6efd;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   404 Page
+   ========================================================= */
+
+.error-page {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #f1f5ff);
+    border: 1px solid #e1e7f0;
+    border-radius: 20px;
+}
+
+.error-code {
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.error-content h2 {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.error-content p {
+    max-width: 550px;
+    margin: 15px auto 0;
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+.error-content .btn {
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   Responsive Design
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .hero {
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-photo-wrapper {
+        max-width: 320px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-photo {
+        height: 420px;
+    }
+
+    .home-about {
+        padding: 30px 20px;
+    }
+
+    .contact-form-card {
+        padding: 25px 20px;
+    }
+
+}

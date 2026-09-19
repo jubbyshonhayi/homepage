@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <!-- Hero Text -->
+            <div class="col-lg-7">
+
+                <span class="hero-label">
+                    Technology • Business • FinTech
+                </span>
+
+                <h1 class="display-4 fw-bold mt-3">
+                    Building With Technology.
+                    <span>Thinking Like a Business.</span>
+                </h1>
+
+                <p class="lead mt-4">
+                    I'm a Computer Science student interested in technology,
+                    business, and building things that solve real problems.
+                </p>
+
+                <p>
+                    I enjoy learning how technology works, building personal
+                    projects, and exploring how technology can create useful solutions.
+                </p>
+
+                <div class="hero-buttons mt-4">
+                    <a class="btn btn-warning btn-lg"
+                       href="{{ url_for('projects') }}">
+                        Explore My Projects
+                    </a>
+
+                    <a class="btn btn-light btn-lg"
+                       href="{{ url_for('contact') }}">
+                        Let's Connect
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Hero Photo -->
+            <div class="col-lg-5">
+
+                <div class="hero-photo-wrapper">
+                    <img src="{{ url_for('static', filename='images/profile.jpg') }}"
+                         alt="Jubilant Shonhayi"
+                         class="hero-photo">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- What I Do Section -->
+<section class="container my-5">
+
+    <h2 class="section-title">What I Do</h2>
+
+    <div class="row">
+
+        <div class="col-md-3 mb-4">
+            <div class="what-i-do-card">
+                <div class="card-body">
+
+                    <h5>Software Development</h5>
+
+                    <p>
+                        Building applications and learning how different
+                        technologies work together.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+            <div class="what-i-do-card">
+                <div class="card-body">
+
+                    <h5>Data & Analytics</h5>
+
+                    <p>
+                        Working with data to find patterns and make
+                        better decisions.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+            <div class="what-i-do-card">
+                <div class="card-body">
+
+                    <h5>FinTech</h5>
+
+                    <p>
+                        Exploring how technology can improve financial
+                        services and accessibility.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+            <div class="what-i-do-card">
+                <div class="card-body">
+
+                    <h5>Entrepreneurship</h5>
+
+                    <p>
+                        Turning ideas into practical projects and exploring
+                        how they can become businesses.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- About Me Section -->
+<section class="container my-5">
+
+    <div class="home-about">
+
+        <h2>A Little About Me</h2>
+
+        <p>
+            Technology is one of my main interests, but I also enjoy
+            business, finance and understanding how companies work.
+        </p>
+
+        <p>
+            I'm interested in combining these areas to build practical
+            products that solve problems and create real value.
+        </p>
+
+        <a href="{{ url_for('about') }}" class="btn btn-outline-primary mt-2">
+            Learn More About Me
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Inspiration Quotes -->
+<section class="container text-center mb-5">
+
+    <button id="quote-btn" class="btn btn-success">
+        Inspire Me
+    </button>
+
+    <p id="quote" class="mt-3 fs-5 fw-bold"></p>
+
+</section>
+
+{% endblock %}
+
+<!-- Footer -->
+{% block footer %}
+    <p>&#169; 2026 Jubilant Shonhayi</p>
+{% endblock %}
