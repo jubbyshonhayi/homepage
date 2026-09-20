@@ -61,7 +61,7 @@ def contact():
 
         sender = {
             "name": "Jubilant Shonhayi",
-            "email": "jubilantjubby@gmail.com"
+            "email": os.getenv("BREVO_SENDER_EMAIL")
         }
 
         # Email notification for me
@@ -69,7 +69,7 @@ def contact():
             sender=sender,
             to=[
                 {
-                    "email": "jubilentshonhayi@gmail.com"
+                    "email": os.getenv("NOTIFICATION_EMAIL")
                 }
             ],
             reply_to={
